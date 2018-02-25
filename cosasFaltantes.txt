@@ -1,0 +1,30 @@
+1. Comandos:
+	-manpage -> falta formato 
+	-3 juegos
+	-reproductor 
+	-salir -> LISTO!
+	-fecha
+	-hora
+	-buscar archivo en específico
+
+2. Prompt: 
+	-muestra nombre de usuaio -> LISTO
+	-carpeta donde se trabaja -> LISTO 
+
+3. Sistema de acceso
+	-logueo
+
+4. Diseño
+	-personalizar colores y demás
+
+5. MP3
+	-verificar que el usuario tenga instalado mpg123 y sino, realizar la instalación
+
+6. Extra
+	-usar flechas izq y derecha
+	-ctrl + Z -> LISTO
+	-Funcionalidad del script sin super user 
+
+
+------------------------COMENTARIOS--------------------------
+(agreguen aquí comentarios que tengan)

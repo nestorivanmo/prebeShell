@@ -47,7 +47,7 @@ do
  read COMMAND_INPUT
  case $COMMAND_INPUT in
 	(salir) exit;;
-	(manpage) manpage.sh;;
+	(manpage) ./manpage.sh;;
 	*) echo $COMMAND_INPUT": comando inváido";;
  esac
 done

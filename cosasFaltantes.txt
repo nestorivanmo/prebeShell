@@ -1,15 +1,17 @@
 1. Comandos:
-	-manpage -> falta formato 
+	-manpage -> LISTO 
 	-3 juegos
 	-reproductor 
 	-salir -> LISTO!
-	-fecha
-	-hora
+	-fecha -> LISTO!
+	-hora -> LISTO!
 	-buscar archivo en específico
+	-arbol -> parcialmente listo - falta formato
 
 2. Prompt: 
 	-muestra nombre de usuaio -> LISTO
 	-carpeta donde se trabaja -> LISTO 
+	-modificar diseño
 
 3. Sistema de acceso
 	-logueo

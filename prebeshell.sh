@@ -30,6 +30,16 @@ read
 
 }
 
+mostrarFecha()
+{
+ echo $(date +"%a %d/%m/%y")
+ echo "Día: "$(date +"%j")
+}
+mostrarHora()
+{
+ echo $(date +"%H:%M")
+}
+
 trap 'errorSignal' SIGINT SIGTSTP
 
 
@@ -45,9 +55,11 @@ do
  read COMMAND_INPUT args
  case $COMMAND_INPUT$args in
 	(arbol|arbol$args) ./arbol.sh $args;;
-	(salir) exit;;
+	(salir|s) exit;;
 	(manpage) ./manpage.sh;;
 	(clear) clear;;
+	(hora|h) mostrarHora;;
+	(fecha|f) mostrarFecha;;
 	*) echo $COMMAND_INPUT": comando inváido";;
  esac
 done

@@ -31,4 +31,4 @@ echo "    Erick Bárcenas, Néstor Martínez y Daniel Pineda"
 echo " "
 echo "Presiona cualquier tecla para continuar..."
 read
-
+clear

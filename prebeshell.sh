@@ -26,10 +26,8 @@ echo " "
 echo " "
 echo " "
 echo "Presiona cualquier tecla para comenzar..."
-
 read
 
-clear
 }
 
 trap 'errorSignal' SIGINT SIGTSTP
@@ -40,14 +38,16 @@ PS1=$(hostname -f)" @ "$PWD
 
 intro
 
+
 while :
 do
  echo -n $PS1": "
-
- read COMMAND_INPUT
- case $COMMAND_INPUT in
+ read COMMAND_INPUT args
+ case $COMMAND_INPUT$args in
+	(arbol|arbol$args) ./arbol.sh $args;;
 	(salir) exit;;
 	(manpage) ./manpage.sh;;
+	(clear) clear;;
 	*) echo $COMMAND_INPUT": comando inváido";;
  esac
 done

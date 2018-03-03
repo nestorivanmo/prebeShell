@@ -1,7 +1,6 @@
 #!/bin/bash
 
 clear
-echo -e ‘Esto es \e[0;31mrojo\e[0m y esto es \e[1;34mazul resaltado\e[0m’
 sleep 1s
 figlet "19 Prebebes"
 
@@ -37,16 +36,42 @@ echo -ne '##############                               (35%)\r'
 
 echo -ne '\n'
 sleep 1s
+# VAMOS A PONERLE COLOR A UN CODIGO DE  LA HISTORIA
 
-echo " Dic. 2017. 
+cecho() {
+  local code="\033["
+  case "$1" in
+    black  | bk) color="${code}0;30m";;
+    red    |  r) color="${code}1;31m";;
+    green  |  g) color="${code}1;32m";;
+    yellow |  y) color="${code}1;33m";;
+    blue   |  b) color="${code}1;34m";;
+    purple |  p) color="${code}1;35m";;
+    cyan   |  c) color="${code}1;36m";;
+    gray   | gr) color="${code}0;37m";;
+    *) local text="$1"
+  esac
+  [ -z "$text" ] && local text="$color$2${code}0m"
+  echo "$text"
+}
+
+#AQUI TERMINA EL CODIGO DE COLOR
+cecho blue  " Dic. 2017. 
   Ochenta prebebes fueron a la prueba de conocimientos,
   solo 55 fueron aceptados.
   40 de ellos llegaron el priemer dia,y 30 al segundo,
   conforme pasaron los dias fueron desertando.
   Hoy solo quedan 19 prebebes para resonar en la eternidad"
-
 echo '\n'
-echo "¿Estas listo?"
-echo  '\n' 
-echo "Porque si me niegas, niegas a 19 prebebes:"
+
+echo "Jugaras con el Prebebe:"
+shuf  -n 1 -i 0-30
+#echo  '\n' 
+echo "¿Deseas saber sus poderes?"
 echo '\n' 
+
+
+printf "La pregunta"
+if [[ $(yesno no) == yes ]]; then
+        #lo que sea que queramos hacer
+fi

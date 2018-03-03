@@ -14,10 +14,10 @@
 	-modificar diseño
 
 3. Sistema de acceso
-	-logueo
+	-logueo -> LISTO !
 
 4. Diseño
-	-personalizar colores y demás
+	-personalizar colores y dar formato al sistema de logueo
 
 5. MP3
 	-verificar que el usuario tenga instalado mpg123 y sino, realizar la instalación

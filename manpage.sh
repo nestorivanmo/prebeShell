@@ -13,7 +13,7 @@ echo " "
 echo "    man page -> despliega información sobre los comandos"
 echo "    juego 1 -> descripción juego1"
 echo "    juego2 -> descripción juego 2"
-echo "    juego3 -> descripción juego3"
+echo "    mozek -> MOZEK desafiará tus habilidades mentales...inténtalo"
 
 echo "    prebeplayer -> reproductor de musica"
 echo "    salir -> sale de la prebeshell"

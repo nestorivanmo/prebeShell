@@ -33,6 +33,7 @@ do
 	(clear) clear;;
 	(hora|h) mostrarHora;;
 	(fecha|f) mostrarFecha;;
+	(mozek) ./memoria.sh;;
 	*) echo $COMMAND_INPUT": comando inváido";;
  esac
 done

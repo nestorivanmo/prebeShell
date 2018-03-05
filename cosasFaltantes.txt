@@ -1,6 +1,8 @@
 1. Comandos:
 	-manpage -> LISTO 
-	-3 juegos
+	-Juego 1 ->
+	-Juego 2 ->
+	-Juego 3 (MOZEK) -> listo
 	-reproductor 
 	-salir -> LISTO!
 	-fecha -> LISTO!

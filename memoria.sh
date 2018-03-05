@@ -163,6 +163,8 @@ done
 		imprimeCaracteres $speed
 		respuestaUsuario
 	else
+		tput cup 26 50
+		echo "Patrón: ${array[@]}"
 		tput cup 28 52
 		echo "Racha: $bienTotal respuestas buenas"
 		tput cup 35 0

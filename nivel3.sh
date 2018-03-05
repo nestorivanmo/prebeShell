@@ -12,19 +12,19 @@ IBLUE='\033[0;104m'
 
 
 runo(){
-echo "Wario"
+echo "Gengar"
 }
 
 rdos(){ 
-echo "Luigui"
+echo "Pikachu"
 }
 
 rtres(){ 
-echo "Mario"
+echo "Charizard"
 }
 
 rcuatro(){ 
-echo "Toad"
+echo "Mewtwo"
 }
 
 rcinco(){ 
@@ -67,10 +67,10 @@ incorrecto
 }
 
 dos(){
-echo -e "											${GREEN}¡Correcto! ${STD}" && sleep 5
+echo -e "											${GREEN}¡Correcto! ${STD}" && sleep 2
 correcto
 pausa
-telnet towel.blinkenlights.nl
+#telnet towel.blinkenlights.nl
 exit
 }
 
@@ -130,7 +130,8 @@ menu_pregunta() {
 	echo "										     3." $(rtres)
 	echo "										     4." $(rcuatro)
 	echo "										     5. Pista (-1 vida)"
-	echo "										     0.  Salir "  
+	echo "
+	             										   0.  Salir "  
 }
 
 
@@ -151,14 +152,12 @@ echo -e "
 
 
 ";
-echo -e "                         _____██████████████"
-echo -e "                         -____██▓▓▓▓▓▓▓▓▓ M ▓████"
-echo -e "                         -__██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██"
-echo -e "                         -__██████░░░░██░░██████"
-echo -e "                         ██░░░░████░░██░░░░░░░░██"
-echo -e "                         ██░░░░████░░░░██░░░░░░██"
-echo -e "                         -__████░░░░░░██████████"
-echo -e "                         -__██░░░░░░░░░░░░░██"
+echo -e " █▀▀▄           ▄▀▀█ "
+echo -e " █░░░▀▄ ▄▄▄▄▄ ▄▀░░░█ "
+echo -e "  ▀▄░░░▀░░░░░▀░░░▄▀ "
+echo -e "    ▌░▄▄░░░▄▄░▐▀▀ "
+echo -e "    ░░█▄░░░▄█░░▌▄▄▀▀▀▀█ "
+
 sleep 2s
 }
 
@@ -179,17 +178,19 @@ echo -e "
 
 
 ";
-echo -e "                         _____██░░░░░░░░░██"
-echo -e "                         -______██░░░░░░██"
-echo -e "                         -____██▓▓████▓▓▓█"
-echo -e "                         -_██▓▓▓▓▓▓████▓▓█"
-echo -e "                         ██▓▓▓▓▓▓███░░███░"
+
+echo -e "  ▄▀▀▐▀▀░▄▄▄▄▄░▀▀▌▄▄▄   █ "
+echo -e "  █░░░▀▄░█░░░█░▄▀░░░░█▀▀▀ "
+echo -e "   ▀▄░░▀░░▀▀▀░░▀░░░▄█▀ "
+echo -e "     █░░░░░░░░░░░▄▀▄  "
 sleep 2s
 }
 
 imprime3(){
 clear
-echo "                                                            NIVEL: 3 " 
+echo " 
+	
+	                                                           NIVEL: 3 " ;
 sleep 2s
 echo -e "
 
@@ -207,11 +208,11 @@ echo -e "
 
 ";
 
-echo -e "                         -__██░░░░░░███████"
-echo -e "                         -____██░░░░███████"
-echo -e "                         -______██████████"
-echo -e "                         -_____██▓▓▓▓▓▓▓▓▓██"
-echo -e "                         -_____█████████████"
+echo -e "    █░░░░░░░░░▄▀█░░█░░█ "
+echo -e "    █░░░░░░░░░░░█▄█░░▄▀  "
+echo -e "    █░░░░░░░░░░░████▀ "
+echo -e "    ▀▄▄▀▀▄▄▀▀▄▄▄█▀ "
+
 sleep 2s
 
 }
@@ -242,10 +243,10 @@ do
 	0) imprime3;
 	menu_pregunta;
 	leer_respuesta;;
-	-1) imprime2;
+	-1) imprime1;
 	menu_pregunta;
         leer_respuesta;;
-	-2) imprime1;
+	-2) imprime2;
         menu_pregunta;
         leer_respuesta;
 	echo "game over";

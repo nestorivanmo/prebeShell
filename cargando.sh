@@ -235,7 +235,6 @@ leer_respuesta(){
 while true
 do
 
-#mplayer mario.mp3
 	case $CONT in 
 
 	0) imprime3;

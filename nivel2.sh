@@ -11,23 +11,23 @@ CYAN='\033[1;96m'
 
 
 runo(){
-echo "Wario"
+echo "Spider Man"
 }
 
 rdos(){ 
-echo "Luigui"
+echo "Batman"
 }
 
 rtres(){ 
-echo "Mario"
+echo "Iron Man"
 }
 
 rcuatro(){ 
-echo "Toad"
+echo "Black Panter"
 }
 
 rcinco(){ 
-echo "Pista"
+echo "Ant-Man"
 }
 
 
@@ -129,7 +129,8 @@ menu_pregunta() {
 	echo "										     3." $(rtres)
 	echo "										     4." $(rcuatro)
 	echo "										     5. Pista (-1 vida)"
-	echo "										     0.  Salir "  
+	echo "
+												     0.  Salir "  
 }
 
 
@@ -150,14 +151,17 @@ echo -e "
 
 
 ";
-echo -e "                         _____██████████████"
-echo -e "                         -____██▓▓▓▓▓▓▓▓▓ M ▓████"
-echo -e "                         -__██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██"
-echo -e "                         -__██████░░░░██░░██████"
-echo -e "                         ██░░░░████░░██░░░░░░░░██"
-echo -e "                         ██░░░░████░░░░██░░░░░░██"
-echo -e "                         -__████░░░░░░██████████"
-echo -e "                         -__██░░░░░░░░░░░░░██"
+echo -e "               ▓████▓█▓████▓  "
+echo -e "            ██▓ ▒      ░░ ▓██  "
+echo -e "           ▒██   ▓░░░░░ ▓▓   ██   "
+echo -e "          ▒█  ░▒  ░     ▒ ░░▒ ▒█   "
+echo -e "          █  ▓▓   █░░░░▓▓   █  ██   "
+echo -e "         ██ ░░▒ ░▒▓░   ▒▒▒ ▒ ░  █  "
+echo -e "         █▒█  ░█░  ▒   ▒  ▒█  ▒██▒  "
+echo -e "         █▓██ ░▓   ▓  ▒   ▒ ░ ██▓█  "
+echo -e "         █████  ▓░░█▒░█░░▓   █████  "
+echo -e "         ██░ ██ ░▒  ░ ░ ▓░  ██ ███  "
+
 sleep 2s
 }
 
@@ -178,17 +182,24 @@ echo -e "
 
 
 ";
-echo -e "                         _____██░░░░░░░░░██"
-echo -e "                         -______██░░░░░░██"
-echo -e "                         -____██▓▓████▓▓▓█"
-echo -e "                         -_██▓▓▓▓▓▓████▓▓█"
-echo -e "                         ██▓▓▓▓▓▓███░░███░"
+echo -e "         ███  ██▒ ░ ▒▒▒░  ███  ███ "
+echo -e "         ███   ▒███▓▒▒▓▒███    ██▓ "
+echo -e "         ▓███    ▓██▒█░██     ███░ "
+echo -e "          █ ██  ███ ▒▓ ▓██▒  ██ █ "
+echo -e "          █  ████ ░░▒▓░  ▒████ ██ "
+echo -e "          ▒█ ░▒  ▒  ░ ░ ░▒░▒▒ ▒█ "
+echo -e "           ██   ▒░ ▓▒░█▒  ░░  ██ "
+echo -e "            █  ▓░  ▒  ░░ ░░▒░▓█  "
+echo -e "           ░██▓  ░▓▓░░░█▒   ▒█▒  "
+
 sleep 2s
 }
 
 imprime3(){
 clear
-echo "                                                            NIVEL: 2 " 
+echo "  
+	
+	                                                          NIVEL: 2 " 
 sleep 2s
 echo -e "
 
@@ -204,13 +215,19 @@ echo -e "
 
 
 
+
 ";
 
-echo -e "                         -__██░░░░░░███████"
-echo -e "                         -____██░░░░███████"
-echo -e "                         -______██████████"
-echo -e "                         -_____██▓▓▓▓▓▓▓▓▓██"
-echo -e "                         -_____█████████████"
+echo -e "            ▓█▓█   ▒     ▒  ░██▒ "
+echo -e "            █▒░▒█▓▓░  ░  ░▓▓█▒▓█ "
+echo -e "           ▒█ ▒  ███▒░░░▒███   ██ "
+echo -e "         ▒██  █░░░  █▓▓▓█░ ░░░▓ ██▓ "
+echo -e "   ░▓▓▓████░ ▒  ░▓  ▒░  ▒░ ▓  ░▒ ▓███▒░  "
+echo -e "   ░▓▒█▓░   ▒▓░░▒░  ▒   ▒  ░▓░░▒▒   █████░  "
+echo -e "    ░░ ░░░░▒░   ▓ ░░▓░░░▓▒  ░▒   ▒▒▒   ░▓  "
+echo -e "   ░▒░░   ▓▒░░░▓▒   ▓   ░▒ ░░░▓▓░  ░▒▒░▒  "
+echo -e "       ░▓▓░   ░▒   ▒▓ ░░░▓     ▒▓░░░░░▒▒░  "
+echo -e "       ▒▒   ░▒█░░░ ▒░ ░░░▒▒░▒░░ ░▒▓     ░"
 sleep 2s
 
 }
@@ -238,13 +255,13 @@ while true
 do
 	case $CONT in 
 
-	0) imprime3;
+	0) imprime1;
 	menu_pregunta;
 	leer_respuesta;;
 	-1) imprime2;
 	menu_pregunta;
         leer_respuesta;;
-	-2) imprime1;
+	-2) imprime3;
         menu_pregunta;
         leer_respuesta;
 	echo "game over";

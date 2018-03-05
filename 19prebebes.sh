@@ -5,44 +5,81 @@ MARGENIZQ=10
 UCOL=50
 UFIL=40
 
+clear
 prebes(){
-clear
-sleep 1s
-figlet "19 Prebebes"
 
-echo -ne '                                                  (0%)\r'
+bannner(){
+clear
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+
+echo -e "					   __  ___    _____          _          _       __      "
+echo -e "					  /_ |/ _ \  |  __ \        | |        | |     /_/       "
+echo -e "					   | | (_) | | |__) | __ ___| |__   ___| |__   ___  ___  "
+echo -e "					   | |\__, | |  ___/ '__/ _ \ '_ \ / _ \ '_ \ / _ \/ __| "
+echo -e "					   | |  / /  | |   | | |  __/ |_) |  __/ |_) |  __/\__ \ "
+echo -e "				  	   |_| /_/   |_|   |_|  \___|_.__/ \___|_.__/ \___||___/ "
+
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+}
+
+bannner
+echo -ne ' 				          	                                            (0%)\r'
 sleep 1 
 clear
-figlet "19 Prebebes"
+bannner
+echo -ne '	      				  😂 😅 😂 😇 🙂 🙃 😉 😌 😍 😘 😗                             (20%)\r'
+sleep 1
+clear
+bannner
+echo -ne '	                  		  😶 😐 😑 😯 😦 😧 😮 😲 😵 👩 ‍👩 ‍👦 ‍👦                         (50%)\r'
+sleep 1
+clear
+bannner
 
-echo -ne '😂 😅 😂 😇 🙂 🙃 😉 😌 😍 😘 😗                             (20%)\r'
+echo -ne '				          👩 ‍🌾 👨 ‍🌾 👩 ‍🍳 👨 ‍🍳 👩 ‍🎓 👨 ‍🎓 👩 ‍🎤 👨 ‍🎤                   (80%)\r'
 sleep 1
 clear
-figlet "19 Prebebes"
-echo -ne '😶 😐 😑 😯 😦 😧 😮 😲 😵 👩 ‍👩 ‍👦 ‍👦                         (50%)\r'
+bannner
+
+echo -ne '	                 		  👿 👹 👺 💩 👻 💀 ☠️ 👽 👾 🤖 🎃 😺 😸 😹 😻 🙎 🙎 ‍♂️ 🙍 🙍 ‍♂️         (100%)\r'
 sleep 1
 clear
-figlet "19 Prebebes"
-echo -ne '👩 ‍🌾 👨 ‍🌾 👩 ‍🍳 👨 ‍🍳 👩 ‍🎓 👨 ‍🎓 👩 ‍🎤 👨 ‍🎤                   (80%)\r'
+bannner
+
+echo -ne '					  👨 ‍👩 ‍👧 👨 ‍👩 ‍👧 ‍👦 👨 ‍👩 ‍👦 ‍👦 👨 ‍👩 ‍👧‍ 👧 👩 ‍👩 ‍👦               (80%)\r'
 sleep 1
 clear
-figlet "19 Prebebes"
-echo -ne '👿 👹 👺 💩 👻 💀 ☠️ 👽 👾 🤖 🎃 😺 😸 😹 😻 🙎 🙎 ‍♂️ 🙍 🙍 ‍♂️         (100%)\r'
-sleep 1
-clear
-figlet "19 Prebebes"
-echo -ne '👨 ‍👩 ‍👧 👨 ‍👩 ‍👧 ‍👦 👨 ‍👩 ‍👦 ‍👦 👨 ‍👩 ‍👧‍ 👧 👩 ‍👩 ‍👦               (80%)\r'
-sleep 1
-clear
-figlet "19 Prebebes"
-echo -ne '😭 😓 😪 😴 🙄 😩 😤 😠 😡 😳 😱 😨 😰 😢                       (50%)\r'
+bannner
+echo -ne '		          		  😭 😓 😪 😴 🙄 😩 😤 😠 😡 😳 😱 😨 😰 😢                       (50%)\r'
 sleep 1 
 clear
-figlet "19 Prebebes"
-echo -ne '😀 😃 😄 😁 😆 🤓 😎                                     (35%)\r'
+bannner
+echo -ne ' 		         		  😀 😃 😄 😁 😆 🤓 😎                                     (35%)\r'
 
 sleep 1s
 # VAMOS A PONERLE COLOR A UN CODIGO DE  LA HISTORIA
+
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
 
 cecho() {
   local code="\033["
@@ -60,30 +97,63 @@ cecho() {
   [ -z "$text" ] && local text="$color$2${code}0m"
   echo "$text"
 }
+clear 
+
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
 
 #AQUI TERMINA EL CODIGO DE COLOR
-cecho blue  " Dic. 2017. 
-  Ochenta prebebes fueron a la prueba de conocimientos,
-  solo 55 fueron aceptados.
-  40 de ellos llegaron el priemer dia,y 30 al segundo,
-  conforme pasaron los dias fueron desertando.
-  Hoy solo quedan 19 prebebes para resonar en la eternidad"
+				cecho blue  " Dic. 2017. 
+				       	      Ochenta prebebes fueron a la prueba de conocimientos,
+				              solo 55 fueron aceptados.
+  					      40 de ellos llegaron el priemer dia,y 30 al segundo,
+  					      conforme pasaron los dias fueron desertando.
+  					      Hoy solo quedan 19 prebebes para resonar en la eternidad"
 
-cecho cyan " Los prebebes restantes jugaban con un globo
-  este se le escapo a un prebebe. Tu mision es dirigirlos
-  para construir una torre,que ayude a llegar hasta el globo"
+				 cecho cyan " Los prebebes restantes jugaban con un globo
+  					      este se le escapo a un prebebe. Tu mision es dirigirlos
+				              para construir una torre,que ayude a llegar hasta el globo"
 echo '\n'
 
 
 PREBE=`echo $(($RANDOM%22))`
 
 
+
+
+
+echo -e "					         \\\///              "
+echo -e "					        / _  _ \             "
+echo -e "					      (| (.)(.) |)           "
+echo -e "					.---.OOOo--()--oOOO.---.     "
+echo -e "					|                      |     "
+echo -e "					|  Eres el prebebé     |     "
+echo -e "					|      $PREBE                |     "
+echo -e "					'---.oooO--------------'     "
+echo -e "					     (   )   Oooo.           "
+echo -e "					      \ (    (   )           "
+echo -e "					       \_)    ) /            "
+echo -e "					             (_/             "
+
+
 echo "Jugaras con el Prebebe $PREBE:"
 
-#echo  '\n'
+
 }
 
 
+clear 
 
 bordes(){
 tput setf 6

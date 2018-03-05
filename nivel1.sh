@@ -1,11 +1,57 @@
 #!/bin/bash
-
+clear
 CONT=0
 RED='\033[1;31m'
 GREEN='\033[1;32m'
 YELLOW='\033[1;33m'
 STD='\033[0;0;39m'
 CYAN='\033[1;96m'
+
+
+
+
+echo "
+            _  _  _  _                 _              _           _        _  _  _  _             _  _  _  _         _           _
+           (_)(_)(_)(_) _            _(_)_           (_) _       (_)      (_)(_)(_)(_)          _(_)(_)(_)(_)_      (_) _     _ (_)
+           (_)         (_)         _(_) (_)_         (_)(_)_     (_)       (_)      (_)_       (_)          (_)     (_)(_)   (_)(_)
+           (_) _  _  _ (_)       _(_)     (_)_       (_)  (_)_   (_)       (_)        (_)      (_)          (_)     (_) (_)_(_) (_)
+           (_)(_)(_)(_)         (_) _  _  _ (_)      (_)    (_)_ (_)       (_)        (_)      (_)          (_)     (_)   (_)   (_)
+           (_)   (_) _          (_)(_)(_)(_)(_)      (_)      (_)(_)       (_)       _(_)      (_)          (_)     (_)         (_)
+           (_)      (_) _       (_)         (_)      (_)         (_)       (_)_  _  (_)        (_)_  _  _  _(_)     (_)         (_)
+           (_)         (_)      (_)         (_)      (_)         (_)      (_)(_)(_)(_)           (_)(_)(_)(_)       (_)         (_)
+";
+
+
+echo " 	         				      _____ _____  _____ _  __ "
+sleep 1s
+echo " 		        			     / ____|_   _|/ ____| |/ /    /\ "
+sleep 1s
+echo " 			         		    | |  __  | | | (___ | ' /    /  \ "
+sleep 1s
+echo " 				        	    | | |_ | | |  \___ \|  <    / /\ \ "
+sleep 1s
+echo " 					            | |__| |_| |_ ____) | . \  / ____ \ "
+sleep 1s
+echo " 					            \_____|_____|_____/|_|\_\/_/    \_\ "
+
+
+
+sleep 2s
+
+
+echo "			 	    	     __^__                                        __^__  "
+echo "				  	    ( ___ )--------------------------------------( ___ ) "
+echo " 	  				     |___|                                        |___|  "
+echo " 	                                     |___|             INSTRUCCIONES              |___|  "
+echo " 	                                     |___|     veras una imagenes fragmentada     |___|  "
+echo " 	                                     |___|	   durante 1s y después dirás     |___|  "
+echo " 	                                     |___|            que personaje es.           |___|  "
+echo -e " 	       	                             |___|                                        |___|  "
+echo "  		                            (_____)--------------------------------------(_____) " 
+
+sleep 4s
+
+
 ############################
 # PREGUNTAS A MODIFICAR
 
@@ -117,7 +163,7 @@ menu_pregunta() {
 
 											PUNTAJE: $CONT
 		";
-	echo " 			 						          ¿Qué personaje es?: 
+	echo -e"                               						       ¿Qué personaje es?: 
 			";
 	echo " 										     ◯ -◯ -◯ -◯ -◯ -◯ -◯ 
 
@@ -127,7 +173,8 @@ menu_pregunta() {
 	echo "										     3." $(rtres)
 	echo "										     4." $(rcuatro)
 	echo "										     5. Pista (-1 vida)"
-	echo "										     0.  Salir "  
+	echo "										  
+											     0.  Salir "  
 }
 
 
@@ -186,7 +233,9 @@ sleep 2s
 
 imprime3(){
 clear
-echo "                                                            NIVEL: 1 " 
+echo "                                                     
+								
+							       NIVEL: 1 " 
 sleep 2s
 echo -e "
 
@@ -235,7 +284,6 @@ leer_respuesta(){
 while true
 do
 
-#mplayer mario.mp3
 	case $CONT in 
 
 	0) imprime3;

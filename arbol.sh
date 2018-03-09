@@ -7,21 +7,22 @@ cut()
 }
 
 arbol(){
+
+echo $PWD
 array=($1/*)
 count=$(ls -N | wc -l)
 
-#echo $PWD
+#echo "${array[@]}"
 
 for ((number=1;number < $count;number++))
 {
-
 if [ -d "${array[number]}" ];then
 	cd ${array[number]}
 	arbol $PWD
 	cd ..
 else
 	if [ -f "${array[number]}" ];then
- 		echo "	--${array[number]}"
+		echo "  --${array[number]}"
 	else
 		echo "${array[number]} not valid"
 		exit 1
@@ -38,14 +39,7 @@ fi
 }
 
 dirActual=$PWD
-
-
-echo "$dirActual"
-echo $dirActual | rev | cut -d'/' -f-3 | rev
-echo $dirActual | rev | cut -d'/' -f-1 | rev
-
-
-#arbol $dirActual
+arbol $dirActual
 
 
 #http://blackshell.usebox.net/pub/shell/taller_sh/x36.html

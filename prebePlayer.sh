@@ -55,12 +55,10 @@ else    fuga=0;
 			echo "No hay directorios dentro de $ruta, intenta la opción de subur de carpeta"
 		#fi
 		;;
-	5)      echo "adiós, bai"
+	5)      echo "adiós"
                 fuga=1
 		;;
-	*)	clear
-		echo "esa no es precisamente lo que llamaría una opción"
-		;;
+	
         esac
 done
 fi

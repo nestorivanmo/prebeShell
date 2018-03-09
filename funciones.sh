@@ -26,7 +26,7 @@ do
  echo -n $PS1": "
  read COMMAND_INPUT args
  case $COMMAND_INPUT$args in
-	(arbol|arbol$args) ./arbol.sh $args;;
+	(arbol|arbol$args) . arbol.sh $args;;
 	(salir|s) echo "salir"
 		exit;;
 	(pp) ./prebePlayer.sh;;

@@ -38,7 +38,19 @@ echo -e "                                  YYYYYY  YYYYYY "
 
 echo -e "\n\n\t\t\t\t\tPresiona cualquier tecla para comenzar..."
 read
+sleep 1;clear
+echo ' 
 
+
+      _       .-.              
+     :_;      : :              
+     .-. .--. : :   .--. .-..-.
+     : :´ ._. : :_ ´ .; :: :; :
+     : :`.__. `.__;`.__. `.__.
+   .-. :                       
+   `._.                        
+   '
+sleep 1
 }
 
 intro

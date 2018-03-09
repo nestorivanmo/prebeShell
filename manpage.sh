@@ -1,35 +1,76 @@
 #!/bin/bash
 clear
-echo " "
-echo "                                                      COMANDOS CHULOS PREBESHELL"
-echo " "
-
-echo "PAGE"
-echo "       Lista de comandos utilizables en la prebeshell"
-echo " "
-
-echo "DESCRIPCIÓN"
-echo " "
-echo "    man page -> despliega información sobre los comandos"
-echo "    juego 1 -> descripción juego1"
-echo "    juego2 -> descripción juego 2"
-echo "    mozek -> MOZEK desafiará tus habilidades mentales...inténtalo"
-
-echo "    prebeplayer -> reproductor de musica"
-echo "    alv -> sale de la prebeshell"
-echo "    tri -> nos puestra la jerarquía de un directorio"
-echo "    deit -> nos despliega la fecha"
-echo "    taim -> nos despliega la hora"
-echo "    arbol -> nos despliega nuestros archivos"
-echo "     -> este comando recibe dos argumentos: archivo a buscar y directorio donde se va a buscar"
 
 echo " "
+echo " "
+echo " "
+RED='\033[1;31m'
+GREEN='\033[1;32m'
+YELLOW='\033[1;33m'
+STD='\033[0;0;39m'
+CYAN='\033[1;96m'
+IBlUE='\033[0;104m'
+WHITE="\033[1;97m"
+BLUE='\033[1;34m'
+Purple='\033[1;35m'
+echo -e "           ${PURPLE}                                                      COMANDOS CHULOS                                            "
 
-echo "AUTORES"
-
-echo "    Erick Bárcenas, Néstor Martínez y Daniel Pineda"
+echo -e " ${GREEN}             ______   ______     ______     ______     ______     ______     __  __     ______     __         __        "
+sleep .05
+echo -e " ${GREEN}            /\  == \ /\  == \   /\  ___\   /\  == \   /\  ___\   /\  ___\   /\ \_\ \   /\  ___\   /\ \       /\ \       "
+sleep .05
+echo -e " ${RED}	      \ \  _-/ \ \  __<   \ \  __\   \ \  __<   \ \  __\   \ \___  \  \ \  __ \  \ \  __\   \ \ \____  \ \ \____  "
+sleep .05
+echo -e " ${CYAN}	      \ \_\    \ \_\ \_\  \ \_____\  \ \_____\  \ \_____\  \/\_____\  \ \_\ \_\  \ \_____\  \ \_____\  \ \_____\ "
+sleep .05
+echo -e " ${YELLOW}	       \/_/     \/_/ /_/   \/_____/   \/_____/   \/_____/   \/_____/   \/_/\/_/   \/_____/   \/_____/   \/_____/" 
 
 echo " "
-echo "Presiona cualquier tecla para continuar..."
+echo " "
+echo " "
+
+echo -e " ${BLUE}         _          __   _ "
+echo -e " ${BLUE}	 |_)   /\   /__  |_ "
+echo -e " ${BLUE}	 |    /--\  \_|  |_ "
+
+echo ""
+echo -e " ${WHITE}           Lista de comandos importantes en la prebeshell "
+
+echo " "
+echo " "
+
+echo -e " ${BLUE}	  _    _   __   _   _   ___   _    _  ___   /        "
+echo -e " ${BLUE}	 | \  |_  (_   /   |_)   |   |_)  /    |   / \  |\ | "
+echo -e " ${BLUE}	 |_/  |_  __)  \_  | \  _|_  |    \_  _|_  \_/  | \| "
+
+sleep .05s
+echo " "
+echo " "
+
+echo -e "	${WHITE}      👑  manpage     ${GREEN}: despliega información sobre los comandos"
+echo -e "	${WHITE}      👑  Random Giska${GREEN}: recuerda momentos mágicos al estilo ascii"
+echo -e "	${WHITE}      👑  19 Prebebés ${GREEN}: ayuda a los 19 prebebés a recuperar la cordura"
+echo -e "	${WHITE}      👑  mozek       ${GREEN}: MOZEK desafiará tus habilidades mentales...inténtalo"
+
+echo -e "	${WHITE}      👑  prebeplayer ${GREEN}: reproductor de musica"
+echo -e "	${WHITE}      👑  alv         ${GREEN}: sale de la prebeshell"
+echo -e "	${WHITE}      👑  tri         ${GREEN}: nos puestra la jerarquía de un directorio"
+echo -e "	${WHITE}      👑  deit        ${GREEN}: nos despliega la fecha"
+echo -e "	${WHITE}      👑  taim        ${GREEN}: nos despliega la hora"
+echo -e "	${WHITE}      👑  arbol       ${GREEN}: nos despliega nuestros archivos"
+echo -e "	${WHITE}                     ${GREEN}:este comando recibe dos argumentos: archivo a buscar y directorio donde se va a buscar"
+
+echo " "
+echo ""
+echo ""
+sleep .05s 
+echo -e "       ${BLUE}             ___   _    _    _   __  "
+echo -e "       ${BLUE}   /\   | |   |   / \  |_)  |_  (_  "
+echo -e "       ${BLUE}  /--\  |_|   |   \_/  | \  |_  __) "
+echo ""
+echo -e "  	${WHITE}      Erick Bárcenas, Néstor Martínez y Daniel Pineda"
+
+echo " "
+echo -e " 										${RED} Presiona [cualquier tecla] para continuar..."
 read
 clear

@@ -1,7 +1,7 @@
 1. Comandos:
 	-manpage -> LISTO 
-	-Juego 1 ->
-	-Juego 2 ->
+	-Juego 1 -> LISTO (NO SIRVE PARA SALIRSE EL JUEGO 1 Y EL 2 TIENE ERROR)
+	-Juego 2 -> LISTO
 	-Juego 3 (MOZEK) -> listo
 	-reproductor  -> DISEÑO 
 	-salir -> LISTO!

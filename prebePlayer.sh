@@ -41,23 +41,8 @@ echo -ne "\033[0;34m \t\t\t\n\t\tOpción:"  #el  ne hace que no deje el espacio 
                 ;;
 2)     clear; sleep 0.5
  echo -e "\n\n\n \t\t\tRolones disponibles"
-# find . -type f -name "*.mp3" | xargs grep "*.mp3" # < sort #esto busca archivos con .mp3 y el grep los lista sin el .mp3
-  #if [-n $(find . -type f -name "*.mp3" | xargs grep "*.mp3") ]
-     #then
               ls *.mp3
-          sleep 05
-          #else 
-          #       echo "no hay canciones aquí"
-               #fi
-    if [[ -n $(find . -print0 | xargs -0 file | grep -i audio | cut -f 1 -d ':') ]]; then           #Si sobre la carpeta ac$
-                        echo -e "\e[1;33m\t Canciones sobre el directorio actual \e[0m"
-                        find . -print0 | xargs -0 file | grep -i audio | cut -f 1 -d ':' | nl                                   #Nos muestra la$
-                        find . -print0 | xargs -0 file | grep -i audio | cut -f 1 -d ':' > canciones.txt
-                        else                                                                                                                   $
-                                echo -e "\e[31m\tNo hay canciones sobre el directorio actual \e[0m"
-                                sleep 2
-                                continue                                                                                                       $
-                        fi
+          sleep 1
 
                 ;;
 3)      cd .. 

@@ -20,8 +20,7 @@ fuga=0;
         echo -ne "\t\t\t\n\t\tOpción:"  #el pishi ne hace que no deje el espacio
         read op
 	   case $op in
-        1)      
-
+        1)
                 echo -e "\ts->parar\t f->siguiente\t+->sube volumen\t-> bajavol"
                 echo -e "\td>> anterior\tq>>parar prebeplayer"
                 mpg123 --title -qC *.mp3
@@ -40,9 +39,7 @@ fuga=0;
                 #fi
                 echo
                  ;;
-        3)      cd .. 
-<<<<<<< HEAD
-		;;
+        3)      cd ..		;;
         4)	echo -e "\t A dónde nos movemos, Emperador?"
 		echo -e "\t\t Directorios posibles:"
 		#if [ ( -n $(ls -F | grep "/$") ]
@@ -57,8 +54,7 @@ fuga=0;
 	5)      echo "adiós"
                 fuga=1
 		;;
-	
-=======
+
                 ;;
         4)      echo -e "\t A dónde nos movemos, Emperador?"
                 echo -e "\t\t Directorios posibles:"
@@ -78,7 +74,6 @@ fuga=0;
         *)      clear
                 echo "esa no es precisamente lo que llamaría una opción"
                 ;;
->>>>>>> 16b661f204c90321bbc285baa2c2a237e209782d
         esac
 done
 

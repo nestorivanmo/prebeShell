@@ -95,7 +95,9 @@ do
 	printf "score: $score"
 	tput cup 10 63
 	tput civis
-	printf "[%s\n" "${array[word]}]"
+	printf "[   ]"
+	tput cup 10 65
+	printf "%s\n" "${array[word]}"
 	sleep $1
 done
 }
@@ -163,7 +165,7 @@ done
 		imprimeCaracteres $speed
 		respuestaUsuario
 	else
-		tput cup 26 50
+		tput cup 26 58
 		echo "Patrón: ${array[@]}"
 		tput cup 28 52
 		echo "Racha: $bienTotal respuestas buenas"

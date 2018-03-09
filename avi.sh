@@ -33,7 +33,8 @@ echo -e "						${GREEN} MOVER - ABAJO   	[b]"
 echo -e "						${GREEN} CAMBIO DE COLOR 	[espacio]"
 echo -e "						${GREEN} SALIR 			[0]"
 
-sleep  4
+echo "Presiona cualquier tecla para continuar..."
+read
 
 trap 'tput cnorm; tput sgr0; clear' EXIT
 

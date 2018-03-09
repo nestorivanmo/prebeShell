@@ -145,7 +145,7 @@ sleep 1; clear;
 	echo -e "        CCCCCCCCCCC                     IIIIIIIIIIII             AAAAAA            AAAA         OOOOOOOOOOOOOOOOOOOOOOOOOO"
 	echo -e "         CCCCCCCCCC                     IIIIIIIIIIII             AAAAAA            AAAA            OOOOOOOOOOOOOOOOOOOOO"
 	echo -e "          CCCCCCCCCCCCCCC            IIIIIIIIIIIIIIIII           AAAAAA            AAAA            OOOOOOOOOOOOOOOOOOOO"
-	echo -e "echo -e "      ▲ ▼ ▶ ◀ ▼ ▲ ▲ ▼ ▶ ▼ ▲ ▲ ▼ ▶ ◀ ▶ ▲ ▲ ▶ ▶ ▼ ▲ ▶ ▶ ▶ ▼ ▲ ◀ ◀ ▶ ▼ ◀ ▶ ▼ ▶ ▶ ◀ ▼ ▲ ◀ ▶ ▲ ▼ ▶ ▶ ▼ ▼ ▲ ◀ ▶ ▼ ▲ "            CCCCCCCCCCCCCCC          IIIIIIIIIIIIIIIIIIII         AAAAAA            AAAA              OOOOOOOOOOOOOOOOO"
+	echo -e "      ▲ ▼ ▶ ◀ ▼ ▲ ▲ ▼ ▶ ▼ ▲ ▲ ▼ ▶ ◀ ▶ ▲ ▲ ▶ ▶ ▼ ▲ ▶ ▶ ▶ ▼ ▲ ◀ ◀ ▶ ▼ ◀ ▶ ▼ ▶ ▶ ◀ ▼ ▲ ◀ ▶ ▲ ▼ ▶ ▶ ▼ ▼ ▲ ◀ ▶ ▼ ▲ "            CCCCCCCCCCCCCCC          IIIIIIIIIIIIIIIIIIII         AAAAAA            AAAA              OOOOOOOOOOOOOOOOO"
 		sleep 2; clear
 		exit;;
 	(pp) ./prebePlayer.sh;;
@@ -154,7 +154,7 @@ sleep 1; clear;
 	(taim|clock|hora) mostrarHora;;
 	(deit|fecha) mostrarFecha;;
 	(mozek) ./memoria.sh;;
-	(arbol) ./arbol.sh;;
+	(tri) ./arbol.sh;;
 	*) echo $COMMAND_INPUT":${RED} Comando inváido";;
  esac
 done

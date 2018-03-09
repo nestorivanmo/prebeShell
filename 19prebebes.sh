@@ -4,7 +4,7 @@ MARGENSUP=1
 MARGENIZQ=10 
 UCOL=50
 UFIL=40
-
+tput civis
 clear
 prebes(){
 #<<COMMENT
@@ -149,9 +149,10 @@ echo -e "						                     (_/             "
 #COMMENT
 
 #echo "Jugaras con el Prebebe $PREBE:"
-sleep 11s
+sleep 5s
 
 }
+
 prebes
 
 source rayo.sh

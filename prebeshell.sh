@@ -22,7 +22,7 @@ while [ $esCorrecto -lt 3 ]; do
 	else
 		if su -c true "$USERNAME"; then
   			esCorrecto=3
-			./funciones.sh
+			./funcionesUp.sh
 		else
 			esCorrecto+=1
 			echo -e "${RED} Intenta de nuevo"

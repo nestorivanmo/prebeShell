@@ -144,16 +144,23 @@ sleep 1; clear;
 	echo -e "        CCCCCCCCCCC                     IIIIIIIIIIII             AAAAAA            AAAA         OOOOOOOOOOOOOOOOOOOOOOOOOO"
 	echo -e "         CCCCCCCCCC                     IIIIIIIIIIII             AAAAAA            AAAA            OOOOOOOOOOOOOOOOOOOOO"
 	echo -e "          CCCCCCCCCCCCCCC            IIIIIIIIIIIIIIIII           AAAAAA            AAAA            OOOOOOOOOOOOOOOOOOOO"
-	"echo -e "      ▲ ▼ ▶ ◀ ▼ ▲ ▲ ▼ ▶ ▼ ▲ ▲ ▼ ▶ ◀ ▶ ▲ ▲ ▶ ▶ ▼ ▲ ▶ ▶ ▶ ▼ ▲ ◀ ◀ ▶ ▼ ◀ ▶ ▼ ▶ ▶ ◀ ▼ ▲ ◀ ▶ ▲ ▼ ▶ ▶ ▼ ▼ ▲ ◀ ▶ ▼ ▲ "            CCCCCCCCCCCCCCC          IIIIIIIIIIIIIIIIIIII         AAAAAA            AAAA              OOOOOOOOOOOOOOOOO"
+	echo -e "            CCCCCCCCCCCCCCC          IIIIIIIIIIIIIIIIIIII         AAAAAA            AAAA              OOOOOOOOOOOOOOOOO"
+#	echo -e "      ▲ ▼ ▶ ◀ ▼ ▲ ▲ ▼ ▶ ▼ ▲ ▲ ▼ ▶ ◀ ▶ ▲ ▲ ▶ ▶ ▼ ▲ ▶ ▶ ▶ ▼ ▲ ◀ ◀ ▶ ▼ ◀ ▶ ▼ ▶ ▶ ◀ ▼ ▲ ◀ ▶ ▲ ▼ ▶ ▶ ▼ ▼ ▲ ◀ ▶ ▼ ▲ 
+	echo -e "      ▲ ▼ ▶ ◀ ▼ ▲ ▲ ▼ ▶ ▼ ▲ ▲ ▼ ▶ ◀ ▶ ▲ ▲ ▶ ▶ ▼ ▲ ▶ ▶ ▶ ▼ ▲ ◀ ◀ ▶ ▼ ◀ ▶ ▼ ▶ ▶ ◀ ▼ ▲ ◀ ▶ ▲ ▼ ▶ ▶ ▼ ▼ ▲ ◀ ▶ ▼ ▲  ▼ ▶ ▶ ◀ ▼ ▲ ◀ $"
 		sleep 2; clear
 		exit;;
-	(pp) ./prebePlayer.sh;;
+	(pp|prebePlayer) ./prebePlayer.sh;;
 	(manpage) ./manpage.sh;;
 	(jeje) clear;;
-	(taim|clock|hora) mostrarHora;;
-	(deit|fecha) mostrarFecha;;
+	(taim|clock|tiempo) mostrarHora;;
+	(deit|fecha|date) mostrarFecha;;
 	(juegos) ./menuJuegos.sh;;
 	(arbol) ./arbol.sh;;
+	(buscar) ./buscar.sh $1 $2;;
+	(clear|b|borrar) clear;;
 	*) echo $COMMAND_INPUT":${RED} Comando inváido";;
  esac
 done
+v
+v
+v

@@ -54,9 +54,7 @@ echo -ne "\033[0;34m \t\t\t\n\t\tOpción:"  #el  ne hace que no deje el espacio 
                 #fi
                 echo
                  ;;
-        3)      cd .. 
-
-		;;
+        3)      cd .. ;;
         4)	echo -e "\t ¿A dónde nos movemos, Emperador?"
 		echo -e "\t\t Directorios posibles:"
 		#if [ ( -n $(ls -F | grep "/$") ]
@@ -65,19 +63,17 @@ echo -ne "\033[0;34m \t\t\t\n\t\tOpción:"  #el  ne hace que no deje el espacio 
 			echo -ne "\033[0;34m \t\t Escribe el directorio, maifren: " #el n hace que no baje el cursor
 			read ans ; cd $ans ; sleep 0.5; echo -e "Listo, está cambiao"
 		#else 
-			echo "No hay directorios dentro de $ruta, intenta la opción de subur de carpeta"
+			echo "No hay directorios dentro de $ruta, intenta la opción de subir de carpeta"
 		#fi
 		;;
 	5)      echo "adiós"
                 fuga=1
 		;;
-	6) echo "No hace nada";;
-	
+	6) echo "No hace nada"
+		;;
         *)      clear
                 echo "esa no es precisamente lo que llamaría una opción"
-                ;;
-
-=======
+                
 
                 ;;
         4)      echo -e "\t A dónde nos movemos, Emperador?"

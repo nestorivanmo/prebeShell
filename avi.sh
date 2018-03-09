@@ -77,11 +77,6 @@ case $KEY in
 	exit;;
 	esac
 
-
-
-
-
-
 	done
 
    imagen=$(

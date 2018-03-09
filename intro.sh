@@ -71,7 +71,19 @@ echo ""
 
 echo -e "      	                          	${GREEN} Presiona [cualquier tecla] para comenzar...";
 read
+sleep 1;clear
+echo ' 
 
+
+      _       .-.              
+     :_;      : :              
+     .-. .--. : :   .--. .-..-.
+     : :´ ._. : :_ ´ .; :: :; :
+     : :`.__. `.__;`.__. `.__.
+   .-. :                       
+   `._.                        
+   '
+sleep 1
 }
 
 intro

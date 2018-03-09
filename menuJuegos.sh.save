@@ -1,0 +1,21 @@
+clear
+
+                
+echo -e " ${GREEN}                                       _____  __       _______ ______   _____       _                 ${STD}  "
+echo -e " ${GREEN}                                      (_____) | |     (_______) _____) / ___ \     / |        ${STD}    "
+echo -e " ${GREEN}                                          | | | |     | /  ___| |        | |  \   / /         ${STD}   "
+echo -e " ${GREEN}                                          | | | |   | |  ___)|  | (___) |   | |   \ \         ${STD}  "
+echo -e " ${GREEN}                                       ___| | | |___| | |____|  \____/| |___| |____) )        ${STD}  "
+echo -e " ${GREEN}                                      (____/   \______ |_______)_____/ \_____(______/         ${STD} "
+
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+echo -e  "  "
+
+
+	 echo -e "       ${YELLOW}                                          1. 19Prebebés ${STD} " 
+        echo -e "       ${YELLOW}                                          2. Memorama       ${STD}" 
+        echo -e "       ${YELLOW}                                          3.                 ${STD}" 
+

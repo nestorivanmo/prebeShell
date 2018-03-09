@@ -25,8 +25,8 @@ tput cup  $SY $SX;
 
 done
 
-
-
 }
 
+
 shoot
+

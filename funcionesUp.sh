@@ -43,17 +43,17 @@ BLUE='\033[1;34m'
 
 errorSignal()
 {
- echo -e " ${GREEN} Intenta usar el comando: ' ${WHITE} salir'"
+ echo -e " ${GREEN} Intenta usar el comando: ' ${GREEN} salir'"
 }
 
 mostrarFecha()
 {
- echo -e $(date +"${WHITE}%a ${GREEN}%d/${YELLOW}%m/${GREEN}%y")
- echo -e "${BLUE}Día: "$(date +"${CYAN}%j")
+ echo -e $(date +"${GREEN}%a ${GREEN}%d/${GREEN}%m/${GREEN}%y")
+ echo -e "${GREEN}Día: "$(date +"${GREEN}%j")
 }
 mostrarHora()
 {
- echo -e $(date +" ${YELLOW}%H:${WHITE}%M")
+ echo -e $(date +" ${GREEN}%H:${GREEN}%M")
 }
 
 
@@ -124,29 +124,51 @@ sleep 1; clear;
 	echo -e "      ▲ ▼ ▶ ◀ ▼ ▲ ▲ ▼ ▶ ▼ ▲ ▲ ▼ ▶ ◀ ▶ ▲ ▲ ▶ ▶ ▼ ▲ ▶ ▶ ▶ ▼ ▲ ◀ ◀ ▶ ▼ ◀ ▶ ▼ ▶ ▶ ◀ ▼ ▲ ◀ ▶ ▲ ▼ ▶ ▶ ▼ ▼ ▲ ◀ ▶ ▼ ▲  ▼ ▶ ▶ ◀ ▼ ▲ ◀ " 
 	echo -e "\n\n\n\n\n          CCCCCCCCCCCCCCCC        IIIIIIIIIIIIIIIIIIIIIII		AAAA		         	OOOOOOOOOOOO"
 	echo -e "         CCCCCCCCCCCCCCCCC        IIIIIIIIIIIIIIIIIIIIII               AAAA   AAAA                       OOOOOOOOOOO"
-	echo -e "        CCCCCCCCCCCCCCCCC           IIIIIIIIIIIIIIIIII               AAAA      AAAAA                   OOOOOOOOOO OOOOOOO"
+	echo -e "        CCCCCCCCCCCCCCCCC           IIIIIIIIIIIIIIIIII               AAAA      AAAAA                   OOOOOOOOOOOOOOOO"
 	echo -e "        CCCCCCCCCCC                     IIIIIIIIIIII              AAAAA        AAAAA               OOOOOOOOOOOOOOOOOOOO"
 	echo -e "       CCCCCCCCCCCC                     IIIIIIIIIIII             AAAAAA        AAAAAAA            OOOOOOOOOO     OOOOOOO"
-	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA         AAAAAAA           OOOOOOOOOO       OOOOOOOO"
-	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA           AAAAA         OOOOOOOOO         OOOOOOOOO"
-	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA        OOOOOOOOO          OOOOOOOOOO"
-	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOOO          OOOOOOOOOO"
-	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA     OOOOOOOOOOO             OOOOOOO"
-	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAAAAAAAAAAAAAAAAAA     OOOOOOOOOOO            OOOOOOOO"
-	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAAAAAAAAAAAAAAAAAA      OOOOOOOOOO            OOOOOOOO"
-	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOO             OOOOOOOO"
-	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOO                OOOOOOOOO"
-	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOO            OOOOOOOOOO"
-	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOOO           OOOOOOOOOO"
-	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOOO           OOOOOOO"
-	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA        OOOOOOOOOO         OOOOOOOO"
-	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA         OOOOOOOO          OOOOOOO"
-	echo -e "        CCCCCCCCCCC                     IIIIIIIIIIII             AAAAAA            AAAA         OOOOOOOOOOOOOOOOOOOOOOOOOO"
-	echo -e "         CCCCCCCCCC                     IIIIIIIIIIII             AAAAAA            AAAA            OOOOOOOOOOOOOOOOOOOOO"
-	echo -e "          CCCCCCCCCCCCCCC            IIIIIIIIIIIIIIIII           AAAAAA            AAAA            OOOOOOOOOOOOOOOOOOOO"
-	echo -e "            CCCCCCCCCCCCCCC          IIIIIIIIIIIIIIIIIIII         AAAAAA            AAAA              OOOOOOOOOOOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA         AAAAAAA           OOOOOOO        OOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA           AAAAA         OOOOOOOO         OOOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA       OOOOOOOOO          OOOOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOO          OOOOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOO          OOOOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAAAAAAAAAAAAAAAAAA      OOOOOOOOOO          OOOOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAAAAAAAAAAAAAAAAAA      OOOOOOOOOO          OOOOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOO          OOOOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOO          OOOOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOO          OOOOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOO          OOOOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA       OOOOOOOOOO         OOOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA        OOOOOOOOO         OOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA         OOOOOOOO         OOOOOOO"
+	echo -e "        CCCCCCCCCCC                     IIIIIIIIIIII             AAAAAA            AAAA          OOOOOOOOOOOOOOOOOOOOOO"
+	echo -e "         CCCCCCCCCC                     IIIIIIIIIIII             AAAAAA            AAAA            OOOOOOOOOOOOOOOOOOO"
+	echo -e "          CCCCCCCCCCCCCCC            IIIIIIIIIIIIIIIII           AAAAAA            AAAA            OOOOOOOOOOOOOOOOO"
+	echo -e "      ▲ ▼ ▶ ◀ ▼ ▲ ▲ ▼ ▶ ▼ ▲ ▲ ▼ ▶ ◀ ▶ ▲ ▲ ▶ ▶ ▼ ▲ ▶ ▶ ▶ ▼ ▲ ◀ ◀ ▶ ▼ ◀ ▶ ▼ ▶ ▶ ◀ ▼ ▲ ◀ ▶ ▲ ▼ ▶ ▶ ▼ ▼ ▲ ◀ ▶ ▼ ▲ "           # CCCCCCCCCCCCCCC          IIIIIIIIIIIIIIIIIIII         AAAAAA            AAAA              OOOOOOOOOOOOOOOOO"
+#	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA         AAAAAAA           OOOOOOOOOO       OOOOOOOO"
+#	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA           AAAAA         OOOOOOOOO         OOOOOOOOO"
+#	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA        OOOOOOOOO          OOOOOOOOOO"
+#	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOOO          OOOOOOOOOO"
+#	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA     OOOOOOOOOOO             OOOOOOO"
+#	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAAAAAAAAAAAAAAAAAA     OOOOOOOOOOO            OOOOOOOO"
+#	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAAAAAAAAAAAAAAAAAA      OOOOOOOOOO            OOOOOOOO"
+#	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOO             OOOOOOOO"
+#	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOO                OOOOOOOOO"
+#	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOO            OOOOOOOOOO"
+#	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOOO           OOOOOOOOOO"
+##	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOOO           OOOOOOO"
+#	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA        OOOOOOOOOO         OOOOOOOO"
+#	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA         OOOOOOOO          OOOOOOO"
+#	echo -e "        CCCCCCCCCCC                     IIIIIIIIIIII             AAAAAA            AAAA         OOOOOOOOOOOOOOOOOOOOOOOOOO"
+#	echo -e "         CCCCCCCCCC                     IIIIIIIIIIII             AAAAAA            AAAA            OOOOOOOOOOOOOOOOOOOOO"
+#	echo -e "          CCCCCCCCCCCCCCC            IIIIIIIIIIIIIIIII           AAAAAA            AAAA            OOOOOOOOOOOOOOOOOOOO"
+#<<<<<< HEAD
+#	echo -e "            CCCCCCCCCCCCCCC          IIIIIIIIIIIIIIIIIIII         AAAAAA            AAAA              OOOOOOOOOOOOOOOOO"
 #	echo -e "      ▲ ▼ ▶ ◀ ▼ ▲ ▲ ▼ ▶ ▼ ▲ ▲ ▼ ▶ ◀ ▶ ▲ ▲ ▶ ▶ ▼ ▲ ▶ ▶ ▶ ▼ ▲ ◀ ◀ ▶ ▼ ◀ ▶ ▼ ▶ ▶ ◀ ▼ ▲ ◀ ▶ ▲ ▼ ▶ ▶ ▼ ▼ ▲ ◀ ▶ ▼ ▲ 
-	echo -e "      ▲ ▼ ▶ ◀ ▼ ▲ ▲ ▼ ▶ ▼ ▲ ▲ ▼ ▶ ◀ ▶ ▲ ▲ ▶ ▶ ▼ ▲ ▶ ▶ ▶ ▼ ▲ ◀ ◀ ▶ ▼ ◀ ▶ ▼ ▶ ▶ ◀ ▼ ▲ ◀ ▶ ▲ ▼ ▶ ▶ ▼ ▼ ▲ ◀ ▶ ▼ ▲  ▼ ▶ ▶ ◀ ▼ ▲ ◀ $"
+#	echo -e "      ▲ ▼ ▶ ◀ ▼ ▲ ▲ ▼ ▶ ▼ ▲ ▲ ▼ ▶ ◀ ▶ ▲ ▲ ▶ ▶ ▼ ▲ ▶ ▶ ▶ ▼ ▲ ◀ ◀ ▶ ▼ ◀ ▶ ▼ ▶ ▶ ◀ ▼ ▲ ◀ ▶ ▲ ▼ ▶ ▶ ▼ ▼ ▲ ◀ ▶ ▼ ▲  ▼ ▶ ▶ ◀ ▼ ▲ ◀ $"
+##=======
+#	echo -e "      ▲ ▼ ▶ ◀ ▼ ▲ ▲ ▼ ▶ ▼ ▲ ▲ ▼ ▶ ◀ ▶ ▲ ▲ ▶ ▶ ▼ ▲ ▶ ▶ ▶ ▼ ▲ ◀ ◀ ▶ ▼ ◀ ▶ ▼ ▶ ▶ ◀ ▼ ▲ ◀ ▶ ▲ ▼ ▶ ▶ ▼ ▼ ▲ ◀ ▶ ▼ ▲ " 
+#>>>>>>> 678b8fa1367d8ab43fe967909cab06f110231a79
 		sleep 2; clear
 		exit;;
 	(pp|prebePlayer) ./prebePlayer.sh;;
@@ -161,6 +183,4 @@ sleep 1; clear;
 	*) echo $COMMAND_INPUT":${RED} Comando inváido";;
  esac
 done
-v
-v
-v
+

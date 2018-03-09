@@ -2,8 +2,6 @@
 emperador(){
 
 echo -e "${GREEN}
-
-
 						                               {{E}}
 						               <>               |.|
 						             .::::.             |M|
@@ -57,6 +55,8 @@ mostrarHora()
 {
  echo -e $(date +" ${YELLOW}%H:${WHITE}%M")
 }
+
+
 
 trap 'errorSignal' SIGINT SIGTSTP
 menu() {
@@ -120,7 +120,6 @@ sleep 1;
  sleep 1;
  echo -e "							${GREEN}¡LISTO! Bai final" 
 
-
 sleep 1; clear; 
 	echo -e "      ▲ ▼ ▶ ◀ ▼ ▲ ▲ ▼ ▶ ▼ ▲ ▲ ▼ ▶ ◀ ▶ ▲ ▲ ▶ ▶ ▼ ▲ ▶ ▶ ▶ ▼ ▲ ◀ ◀ ▶ ▼ ◀ ▶ ▼ ▶ ▶ ◀ ▼ ▲ ◀ ▶ ▲ ▼ ▶ ▶ ▼ ▼ ▲ ◀ ▶ ▼ ▲  ▼ ▶ ▶ ◀ ▼ ▲ ◀ " 
 	echo -e "\n\n\n\n\n          CCCCCCCCCCCCCCCC        IIIIIIIIIIIIIIIIIIIIIII		AAAA		         	OOOOOOOOOOOO"
@@ -128,6 +127,7 @@ sleep 1; clear;
 	echo -e "        CCCCCCCCCCCCCCCCC           IIIIIIIIIIIIIIIIII               AAAA      AAAAA                   OOOOOOOOOOOOOOOO"
 	echo -e "        CCCCCCCCCCC                     IIIIIIIIIIII              AAAAA        AAAAA               OOOOOOOOOOOOOOOOOOOO"
 	echo -e "       CCCCCCCCCCCC                     IIIIIIIIIIII             AAAAAA        AAAAAAA            OOOOOOOOOO     OOOOOOO"
+<<<<<<< HEAD:funciones.sh
 	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA         AAAAAAA           OOOOOOO        OOOOOOOO"
 	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA           AAAAA         OOOOOOOO         OOOOOOOOO"
 	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA       OOOOOOOOO          OOOOOOOOOO"
@@ -146,6 +146,26 @@ sleep 1; clear;
 	echo -e "         CCCCCCCCCC                     IIIIIIIIIIII             AAAAAA            AAAA            OOOOOOOOOOOOOOOOOOO"
 	echo -e "          CCCCCCCCCCCCCCC            IIIIIIIIIIIIIIIII           AAAAAA            AAAA            OOOOOOOOOOOOOOOOO"
 	echo -e "      ▲ ▼ ▶ ◀ ▼ ▲ ▲ ▼ ▶ ▼ ▲ ▲ ▼ ▶ ◀ ▶ ▲ ▲ ▶ ▶ ▼ ▲ ▶ ▶ ▶ ▼ ▲ ◀ ◀ ▶ ▼ ◀ ▶ ▼ ▶ ▶ ◀ ▼ ▲ ◀ ▶ ▲ ▼ ▶ ▶ ▼ ▼ ▲ ◀ ▶ ▼ ▲ "            CCCCCCCCCCCCCCC          IIIIIIIIIIIIIIIIIIII         AAAAAA            AAAA              OOOOOOOOOOOOOOOOO"
+=======
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA         AAAAAAA           OOOOOOOOOO       OOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA           AAAAA         OOOOOOOOO         OOOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA        OOOOOOOOO          OOOOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOOO          OOOOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA     OOOOOOOOOOO             OOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAAAAAAAAAAAAAAAAAA     OOOOOOOOOOO            OOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAAAAAAAAAAAAAAAAAA      OOOOOOOOOO            OOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOO             OOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOO                OOOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOO            OOOOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOOO           OOOOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA      OOOOOOOOOOO           OOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA        OOOOOOOOOO         OOOOOOOO"
+	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA         OOOOOOOO          OOOOOOO"
+	echo -e "        CCCCCCCCCCC                     IIIIIIIIIIII             AAAAAA            AAAA         OOOOOOOOOOOOOOOOOOOOOOOOOO"
+	echo -e "         CCCCCCCCCC                     IIIIIIIIIIII             AAAAAA            AAAA            OOOOOOOOOOOOOOOOOOOOO"
+	echo -e "          CCCCCCCCCCCCCCC            IIIIIIIIIIIIIIIII           AAAAAA            AAAA            OOOOOOOOOOOOOOOOOOOO"
+	"echo -e "      ▲ ▼ ▶ ◀ ▼ ▲ ▲ ▼ ▶ ▼ ▲ ▲ ▼ ▶ ◀ ▶ ▲ ▲ ▶ ▶ ▼ ▲ ▶ ▶ ▶ ▼ ▲ ◀ ◀ ▶ ▼ ◀ ▶ ▼ ▶ ▶ ◀ ▼ ▲ ◀ ▶ ▲ ▼ ▶ ▶ ▼ ▼ ▲ ◀ ▶ ▼ ▲ "            CCCCCCCCCCCCCCC          IIIIIIIIIIIIIIIIIIII         AAAAAA            AAAA              OOOOOOOOOOOOOOOOO"
+>>>>>>> ebb5c5ebf97d4fa117f07ddcc722e0f464e6e884:funcionesUp.sh
 		sleep 2; clear
 		exit;;
 	(pp) ./prebePlayer.sh;;
@@ -153,9 +173,8 @@ sleep 1; clear;
 	(jeje) clear;;
 	(taim|clock|hora) mostrarHora;;
 	(deit|fecha) mostrarFecha;;
-	(mozek) ./memoria.sh;;
-	(tri) ./arbol.sh;;
+	(juegos) ./menuJuegos.sh;;
+	(arbol) ./arbol.sh;;
 	*) echo $COMMAND_INPUT":${RED} Comando inváido";;
  esac
 done
-

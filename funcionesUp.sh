@@ -127,7 +127,6 @@ sleep 1; clear;
 	echo -e "        CCCCCCCCCCCCCCCCC           IIIIIIIIIIIIIIIIII               AAAA      AAAAA                   OOOOOOOOOOOOOOOO"
 	echo -e "        CCCCCCCCCCC                     IIIIIIIIIIII              AAAAA        AAAAA               OOOOOOOOOOOOOOOOOOOO"
 	echo -e "       CCCCCCCCCCCC                     IIIIIIIIIIII             AAAAAA        AAAAAAA            OOOOOOOOOO     OOOOOOO"
-<<<<<<< HEAD:funciones.sh
 	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA         AAAAAAA           OOOOOOO        OOOOOOOO"
 	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA           AAAAA         OOOOOOOO         OOOOOOOOO"
 	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA       OOOOOOOOO          OOOOOOOOOO"
@@ -146,7 +145,6 @@ sleep 1; clear;
 	echo -e "         CCCCCCCCCC                     IIIIIIIIIIII             AAAAAA            AAAA            OOOOOOOOOOOOOOOOOOO"
 	echo -e "          CCCCCCCCCCCCCCC            IIIIIIIIIIIIIIIII           AAAAAA            AAAA            OOOOOOOOOOOOOOOOO"
 	echo -e "      ▲ ▼ ▶ ◀ ▼ ▲ ▲ ▼ ▶ ▼ ▲ ▲ ▼ ▶ ◀ ▶ ▲ ▲ ▶ ▶ ▼ ▲ ▶ ▶ ▶ ▼ ▲ ◀ ◀ ▶ ▼ ◀ ▶ ▼ ▶ ▶ ◀ ▼ ▲ ◀ ▶ ▲ ▼ ▶ ▶ ▼ ▼ ▲ ◀ ▶ ▼ ▲ "            CCCCCCCCCCCCCCC          IIIIIIIIIIIIIIIIIIII         AAAAAA            AAAA              OOOOOOOOOOOOOOOOO"
-=======
 	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA         AAAAAAA           OOOOOOOOOO       OOOOOOOO"
 	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA           AAAAA         OOOOOOOOO         OOOOOOOOO"
 	echo -e "       CCCCCCCCCCC                      IIIIIIIIIIII             AAAAAA            AAAA        OOOOOOOOO          OOOOOOOOOO"
@@ -164,8 +162,7 @@ sleep 1; clear;
 	echo -e "        CCCCCCCCCCC                     IIIIIIIIIIII             AAAAAA            AAAA         OOOOOOOOOOOOOOOOOOOOOOOOOO"
 	echo -e "         CCCCCCCCCC                     IIIIIIIIIIII             AAAAAA            AAAA            OOOOOOOOOOOOOOOOOOOOO"
 	echo -e "          CCCCCCCCCCCCCCC            IIIIIIIIIIIIIIIII           AAAAAA            AAAA            OOOOOOOOOOOOOOOOOOOO"
-	"echo -e "      ▲ ▼ ▶ ◀ ▼ ▲ ▲ ▼ ▶ ▼ ▲ ▲ ▼ ▶ ◀ ▶ ▲ ▲ ▶ ▶ ▼ ▲ ▶ ▶ ▶ ▼ ▲ ◀ ◀ ▶ ▼ ◀ ▶ ▼ ▶ ▶ ◀ ▼ ▲ ◀ ▶ ▲ ▼ ▶ ▶ ▼ ▼ ▲ ◀ ▶ ▼ ▲ "            CCCCCCCCCCCCCCC          IIIIIIIIIIIIIIIIIIII         AAAAAA            AAAA              OOOOOOOOOOOOOOOOO"
->>>>>>> ebb5c5ebf97d4fa117f07ddcc722e0f464e6e884:funcionesUp.sh
+	echo -e "      ▲ ▼ ▶ ◀ ▼ ▲ ▲ ▼ ▶ ▼ ▲ ▲ ▼ ▶ ◀ ▶ ▲ ▲ ▶ ▶ ▼ ▲ ▶ ▶ ▶ ▼ ▲ ◀ ◀ ▶ ▼ ◀ ▶ ▼ ▶ ▶ ◀ ▼ ▲ ◀ ▶ ▲ ▼ ▶ ▶ ▼ ▼ ▲ ◀ ▶ ▼ ▲ " 
 		sleep 2; clear
 		exit;;
 	(pp) ./prebePlayer.sh;;

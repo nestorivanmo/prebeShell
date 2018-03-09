@@ -43,17 +43,17 @@ BLUE='\033[1;34m'
 
 errorSignal()
 {
- echo -e " ${GREEN} Intenta usar el comando: ' ${WHITE} salir'"
+ echo -e " ${GREEN} Intenta usar el comando: ' ${GREEN} salir'"
 }
 
 mostrarFecha()
 {
- echo -e $(date +"${WHITE}%a ${GREEN}%d/${YELLOW}%m/${GREEN}%y")
- echo -e "${BLUE}Día: "$(date +"${CYAN}%j")
+ echo -e $(date +"${GREEN}%a ${GREEN}%d/${GREEN}%m/${GREEN}%y")
+ echo -e "${GREEN}Día: "$(date +"${GREEN}%j")
 }
 mostrarHora()
 {
- echo -e $(date +" ${YELLOW}%H:${WHITE}%M")
+ echo -e $(date +" ${GREEN}%H:${GREEN}%M")
 }
 
 

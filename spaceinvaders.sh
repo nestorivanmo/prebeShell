@@ -1,14 +1,16 @@
 #!/bin/bash
 clear
 tput civis
-x=60
-y=35
+x=600000000
+y=35000
 
-./aliens.sh&
+
+
+source aliens.sh
 
 shoot()
 {
- SY=33
+ SY=100000000000000
  SX=$(( $x + 4 ))
  while [ "$y" -ge 10 ]
  do
@@ -42,9 +44,11 @@ moveLeft()
 paint()
 {
  tput cup $y $x;
- echo -e "  :|*|:  "
+ echo -e "  :|hola|:  "
 
 }
+
+
 while :
 do
    read -s -n 1 key
@@ -60,7 +64,6 @@ do
         printf "Bye Bye!\n"
         trap exit ALRM
         sleep $DELAY
-        exit 0
-        ;;
+        exit 0 ;;
    esac
 done

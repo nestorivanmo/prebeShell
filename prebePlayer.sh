@@ -24,8 +24,8 @@ echo -e "\e[1;34m******************1)Reproducir   	     			                     
 echo -e "\033[1;34m******************2)Lista de canciones      				              *****************"
 echo -e "\033[1;34m******************3)Subir carpeta 	      				              *****************"
 echo -e "\033[1;34m******************4)Cambiar carpeta (a una que sí tengas rolas, goey plis)	      *****************"
-echo -e "\033[1;34m******************5)FUGA (exit, adios, bai bai como quieras decirle, pandilla)     *****************"
-echo -e "-------------------------------------------------------------------------Ruta actual: $ontoi *****************"
+echo -e "\033[1;34m******************5)FUGA (exit, adios, bai bai como quieras decirle, pandilla)        *****************"
+echo -e "-------------------------------------------------------------------------Ruta actual: $ontoi "
 echo -ne "\033[0;34m \t\t\t\n\t\tOpción:"  #el  ne hace que no deje el espacio el echo        
 	read op
 	   case $op in
@@ -37,25 +37,34 @@ echo -ne "\033[0;34m \t\t\t\n\t\tOpción:"  #el  ne hace que no deje el espacio 
  echo -e "\t     *--(+)->sube volumen    (-)-> baja volumen     --*"
  echo -e "\t     *------**------**-----**-------**-----**----**---*"
 
- mpg123 --file -C /home/daniel/Desktop/Music #*.mp3
+ mpg123 --title -qC *.mp3
                 ;;
 2)     clear; sleep 0.5
- echo -e "\tRolones disponibles"
- find . -type f -name "*.mp3" | xargs grep "*.mp3" # < sort #esto busca archivos con .mp3 y el grep los lista sin el .mp3
+ echo -e "\n\n\n \t\t\tRolones disponibles"
+# find . -type f -name "*.mp3" | xargs grep "*.mp3" # < sort #esto busca archivos con .mp3 y el grep los lista sin el .mp3
   #if [-n $(find . -type f -name "*.mp3" | xargs grep "*.mp3") ]
      #then
-      #       echo ls *.mp3
+              ls *.mp3
           sleep 05
           #else 
           #       echo "no hay canciones aquí"
                #fi
-      echo
+    if [[ -n $(find . -print0 | xargs -0 file | grep -i audio | cut -f 1 -d ':') ]]; then           #Si sobre la carpeta ac$
+                        echo -e "\e[1;33m\t Canciones sobre el directorio actual \e[0m"
+                        find . -print0 | xargs -0 file | grep -i audio | cut -f 1 -d ':' | nl                                   #Nos muestra la$
+                        find . -print0 | xargs -0 file | grep -i audio | cut -f 1 -d ':' > canciones.txt
+                        else                                                                                                                   $
+                                echo -e "\e[31m\tNo hay canciones sobre el directorio actual \e[0m"
+                                sleep 2
+                                continue                                                                                                       $
+                        fi
+
                 ;;
 3)      cd .. 
 	;;
 4) echo -e "\t ¿A dónde nos movemos, Emperador?"
    echo -e "\t\t Directorios posibles:"
-   if [ ( -n $(ls -F | grep "/$") ]
+#   if [ ( -n $(ls -F | grep "/$") ]
 		#then
     ls -F | grep "/$"
 			echo -ne "\033[0;34m \t\t Escribe el directorio, maifren: " #el n hace que no baje el cursor
@@ -64,15 +73,33 @@ echo -ne "\033[0;34m \t\t\t\n\t\tOpción:"  #el  ne hace que no deje el espacio 
 			echo "No hay directorios dentro de $ruta, intenta la opción de subur de carpeta"
 		#fi
 		;;
-5)      echo "adiós"
+5)      echo '
+      ______   _______ _________ _______ 
+     (  ___ \ (  ___  )\__   __/(  ____ \
+     | (   ) )| (   ) |   ) (   | (    \/
+     | (__/ / | (___) |   | |   | (_____ 
+     |  __ (  |  ___  |   | |   (_____  )
+     | (  \ \ | (   ) |   | |         ) |
+     | )___) )| )   ( |___) (___/\____) |
+     |/ \___/ |/     \|\_______/\_______) 
+'
                fuga=1
 	;;
-6) echo "No hace nada" 
-	;;
-
-*)      clear
-        echo "esa no es precisamente lo que llamaría una opción"
-                ;;
+*)
+echo -e "\033[1;33m"
+        echo '
+ _        _______    _______  _______             _        _______    _______  _______  _______ _________ _______  _       
+( (    /|(  ___  )  (  ____ \(  ____ \  |\     /|( (    /|(  ___  )  (  ___  )(  ____ )(  ____ \\__   __/(  ___  )( (    /|
+|  \  ( || (   ) |  | (    \/| (    \/  | )   ( ||  \  ( || (   ) |  | (   ) || (    )|| (    \/   ) (   | (   ) ||  \  ( |
+|   \ | || |   | |  | (__    | (_____   | |   | ||   \ | || (___) |  | |   | || (____)|| |         | |   | |   | ||   \ | |
+| (\ \) || |   | |  |  __)   (_____  )  | |   | || (\ \) ||  ___  |  | |   | ||  _____)| |         | |   | |   | || (\ \) |
+| | \   || |   | |  | (            ) |  | |   | || | \   || (   ) |  | |   | || (      | |         | |   | |   | || | \   |
+| )  \  || (___) |  | (____/\/\____) |  | (___) || )  \  || )   ( |  | (___) || )      | (____/\___) (___| (___) || )  \  |
+|/    )_)(_______)  (_______/\_______)  (_______)|/    )_)|/     \|  (_______)|/       (_______/\_______/(_______)|/    )_)
+                                                                                                                           
+'
+        sleep 1
+        ;;
         esac
 done
 
@@ -83,6 +110,7 @@ then    echo "No está el programa para reproducir"
         sudo apt-get install mpg123
 	prebep		#ejecuta la prebeP
 else    
+	clear; echo -e "\033[1;33m"
 	echo -e "\n\n[##################..........................38%]"
 	sleep 0.5
 	echo -e "\n\n[###########################..................59%]"

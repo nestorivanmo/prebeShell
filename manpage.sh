@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 echo " "
-echo "                                                      COMANDOS PREBESHELL"
+echo "                                                      COMANDOS CHULOS PREBESHELL"
 echo " "
 
 echo "PAGE"
@@ -16,11 +16,11 @@ echo "    juego2 -> descripción juego 2"
 echo "    mozek -> MOZEK desafiará tus habilidades mentales...inténtalo"
 
 echo "    prebeplayer -> reproductor de musica"
-echo "    salir -> sale de la prebeshell"
-echo "    arbol -> nos puestra la jerarquía de un directorio"
-echo "    fecha -> nos despliega la fecha"
-echo "    hora -> nos despliega la hora"
-echo "    buscar -> este comando recibe dos argumentos: archivo a buscar y directorio donde se va a buscar"
+echo "    fuga -> sale de la prebeshell"
+echo "    tri -> nos puestra la jerarquía de un directorio"
+echo "    deit -> nos despliega la fecha"
+echo "    taim -> nos despliega la hora"
+echo "     -> este comando recibe dos argumentos: archivo a buscar y directorio donde se va a buscar"
 
 echo " "
 

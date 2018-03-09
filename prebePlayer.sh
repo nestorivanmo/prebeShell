@@ -2,7 +2,6 @@
 #colores código:rojo:\033[0;31m, azulito:\033[0;34m, amarello:\033[1;33m
 
 prebep() {
-
 fuga=0;
         while [ $fuga -ne 1 ]
         do

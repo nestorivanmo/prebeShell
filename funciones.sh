@@ -74,7 +74,7 @@ do
 	(taim|clock|hora) mostrarHora;;
 	(deit|fecha) mostrarFecha;;
 	(mozek) ./memoria.sh;;
-	(arbol) ./arbol.sh;;
+	(tri) ./arbol.sh;;
 	*) echo $COMMAND_INPUT": comando inváido";;
  esac
 done

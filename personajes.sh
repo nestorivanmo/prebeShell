@@ -1,6 +1,7 @@
 #!/bin/bash
 
 clear
+tput civis
 
 
 
@@ -92,10 +93,6 @@ pausa(){
 
  read -p "											Siguiente [Enter]"
 }
-
-
-
-
 
 
 correcto(){

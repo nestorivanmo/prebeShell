@@ -13,7 +13,7 @@ IBlUE='\033[0;104m'
 WHITE="\033[1;97m"
 BLUE='\033[1;34m'
 Purple='\033[1;35m'
-echo -e "           ${PURPLE}                                                      COMANDOS CHULOS                                            "
+echo -e "           ${PURPLE}                                                                                                  "
 
 echo -e " ${GREEN}             ______   ______     ______     ______     ______     ______     __  __     ______     __         __        "
 sleep .05
@@ -47,17 +47,17 @@ sleep .05s
 echo " "
 echo " "
 
-echo -e "	${WHITE}      👑  manpage     ${GREEN}: despliega información sobre los comandos"
-echo -e "	${WHITE}      👑  Random Giska${GREEN}: recuerda momentos mágicos al estilo ascii"
-echo -e "	${WHITE}      👑  19 Prebebés ${GREEN}: ayuda a los 19 prebebés a recuperar la cordura"
-echo -e "	${WHITE}      👑  mozek       ${GREEN}: MOZEK desafiará tus habilidades mentales...inténtalo"
+echo -e "	${WHITE}      👑  manpage     ${GREEN}: info sobre los comandos"
+echo -e "	${WHITE}      👑  giska	     ${GREEN}: recuerda momentos mágicos al estilo ascii"
+echo -e "	${WHITE}      👑  prebebes ${GREEN}   : ayuda a los 19 prebebés a recuperar la cordura"
+echo -e "	${WHITE}      👑  mozek       ${GREEN}: desfía tus habilidades mentales"
 
 echo -e "	${WHITE}      👑  prebeplayer ${GREEN}: reproductor de musica"
 echo -e "	${WHITE}      👑  alv         ${GREEN}: sale de la prebeshell"
-echo -e "	${WHITE}      👑  tri         ${GREEN}: nos puestra la jerarquía de un directorio"
+echo -e "	${WHITE}      👑  tri         ${GREEN}: nos despliega la jerarquía de un directorio"
 echo -e "	${WHITE}      👑  deit        ${GREEN}: nos despliega la fecha"
 echo -e "	${WHITE}      👑  taim        ${GREEN}: nos despliega la hora"
-echo -e "	${WHITE}      👑  arbol       ${GREEN}: nos despliega nuestros archivos"
+#echo -e "	${WHITE}      👑  arbol       ${GREEN}: nos despliega nuestros archivos"
 echo -e "	${WHITE}                     ${GREEN}:este comando recibe dos argumentos: archivo a buscar y directorio donde se va a buscar"
 
 echo " "

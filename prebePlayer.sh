@@ -29,12 +29,14 @@ echo -e "-----------------------------------------------------------------------
 echo -ne "\033[0;34m \t\t\t\n\t\tOpción:"  #el  ne hace que no deje el espacio el echo        
 	read op
 	   case $op in
+
         1)      
 
                 echo -e "\t \033[1:33m *-- S->Parar      f->siguiente   --*"
                 echo -e "\t     *--d->anterior            q->parar prebeplayer --*"
          	echo -e "\t     *--(+)->sube volumen    (-)-> baja volumen     --*"
 		echo -e "\t     *------**------**-----**-------**-----**----**---*"
+
 
                 mpg123 --title -qC *.mp3
                 ;;
@@ -69,12 +71,33 @@ echo -ne "\033[0;34m \t\t\t\n\t\tOpción:"  #el  ne hace que no deje el espacio 
 	5)      echo "adiós"
                 fuga=1
 		;;
-	6) echo "hola";;
+	6) echo "No hace nada";;
 	
         *)      clear
                 echo "esa no es precisamente lo que llamaría una opción"
                 ;;
 
+=======
+
+                ;;
+        4)      echo -e "\t A dónde nos movemos, Emperador?"
+                echo -e "\t\t Directorios posibles:"
+                #if [ ( -n $(ls -F | grep "/$") ]
+                #then
+                        ls -F | grep "/$"
+                        echo -ne "\t\t Answer --->" #el n hace que no baje el cursor
+                        read ans ; cd $ans ; sleep 0.5; echo -e "Listo, está cambiao"
+
+	#else 
+                        echo "No hay directorios dentro de $ruta, intenta la opción de subur de carpeta"
+                #fi
+                ;;
+        5)      echo "adiós, bai"
+                fuga=1
+                ;;
+        *)      clear
+                echo "esa no es precisamente lo que llamaría una opción"
+                ;;
         esac
 done
 

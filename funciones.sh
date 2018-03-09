@@ -29,6 +29,7 @@ do
 	(arbol|arbol$args) ./arbol.sh $args;;
 	(salir|s) echo "salir"
 		exit;;
+	(pp) ./prebePlayer.sh;;
 	(manpage) ./manpage.sh;;
 	(clear) clear;;
 	(hora|h) mostrarHora;;
@@ -37,5 +38,4 @@ do
 	*) echo $COMMAND_INPUT": comando inváido";;
  esac
 done
-
 

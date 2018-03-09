@@ -3,7 +3,7 @@
 	-Juego 1 ->
 	-Juego 2 ->
 	-Juego 3 (MOZEK) -> listo
-	-reproductor 
+	-reproductor  -> DISEÑO 
 	-salir -> LISTO!
 	-fecha -> LISTO!
 	-hora -> LISTO!

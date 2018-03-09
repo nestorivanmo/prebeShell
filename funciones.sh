@@ -41,7 +41,7 @@ do
  echo -n $PS1": "
  read COMMAND_INPUT args
  case $COMMAND_INPUT$args in
-	(alv) clear; echo -e "\033[33m \n\n\n\n\n \t\t\t  Láaaaaaastima que terminó el feeeestival de hoooy :,( . Weno ni fart, bais";sleep 1; echo -e "Cerrando procesos . . ."; sleep 1;
+	(alv|salir) clear; echo -e "\033[33m \n\n\n\n\n \t\t\t  Láaaaaaastima que terminó el feeeestival de hoooy :,( . Weno ni fart, bais";sleep 1; echo -e "Cerrando procesos . . ."; sleep 1;
 	echo -e "Volviendo a tu shell sencilla y aburrida . . ."; sleep 1; echo -e "¡LISTO! Bai final" sleep 1; clear; 
 	echo -e "\n\n\n\n\n          CCCCCCCCCCCCCCCC        IIIIIIIIIIIIIIIIIIIIIII		AAAA		         	OOOOOOOOOOOO"
 	echo -e "         CCCCCCCCCCCCCCCCC        IIIIIIIIIIIIIIIIIIIIII               AAAA   AAAA                       OOOOOOOOOOO"
@@ -71,8 +71,8 @@ do
 	(pp) ./prebePlayer.sh;;
 	(manpage) ./manpage.sh;;
 	(jeje) clear;;
-	(taim|clock) mostrarHora;;
-	(deit) mostrarFecha;;
+	(taim|clock|hora) mostrarHora;;
+	(deit|fecha) mostrarFecha;;
 	(mozek) ./memoria.sh;;
 	(arbol) ./arbol.sh;;
 	*) echo $COMMAND_INPUT": comando inváido";;

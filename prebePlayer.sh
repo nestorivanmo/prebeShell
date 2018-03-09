@@ -3,8 +3,8 @@
 
 prebep() {
 fuga=0;
-        while [ $fuga -ne 1 ]
-        do
+  while [ $fuga -ne 1 ]
+   do
         clear;ontoi=$PWD;
 echo -e "\033[1;33m"
 echo '|   _  \  |   _  \     |   ____||   _  \  |   ____||   _  \  |  |         /   \     \   \  /   / |   ____||   _  \     
@@ -20,83 +20,58 @@ echo '
 `---`---  `----`--- `---|`---
                     `---
 '
-echo -e "\e[1;34m*****************1)Reproducir   	     			               \033[0;34m ||||||*°°°"
-echo -e "\033[1;34m*****************2)Lista de canciones      				        ||||||*°°°"
-echo -e "\033[1;34m*****************3)Subir carpeta 	      				        ||||||*°°°"
-echo -e "\033[1;34m*****************4)Cambiar carpeta (a una que sí tengas rolas, goey plis)	||||||*°°°"
-echo -e "\033[1;34m*****************5)FUGA (exit, adios, bai bai como quieras decirle, pandilla)	||||||*°°°"
-echo -e "-------------------------------------------------------------------------Ruta actual: $ontoi"
+echo -e "\e[1;34m******************1)Reproducir   	     			                      *****************"
+echo -e "\033[1;34m******************2)Lista de canciones      				              *****************"
+echo -e "\033[1;34m******************3)Subir carpeta 	      				              *****************"
+echo -e "\033[1;34m******************4)Cambiar carpeta (a una que sí tengas rolas, goey plis)	      *****************"
+echo -e "\033[1;34m******************5)FUGA (exit, adios, bai bai como quieras decirle, pandilla)     *****************"
+echo -e "-------------------------------------------------------------------------Ruta actual: $ontoi *****************"
 echo -ne "\033[0;34m \t\t\t\n\t\tOpción:"  #el  ne hace que no deje el espacio el echo        
 	read op
 	   case $op in
 
-        1)      
+1)      
 
-                echo -e "\t \033[1:33m *-- S->Parar      f->siguiente   --*"
-                echo -e "\t     *--d->anterior            q->parar prebeplayer --*"
-         	echo -e "\t     *--(+)->sube volumen    (-)-> baja volumen     --*"
-		echo -e "\t     *------**------**-----**-------**-----**----**---*"
+ echo -e "\t \033[1:33m *-- S->Parar      f->siguiente   --*"
+ echo -e "\t     *--d->anterior            q->parar prebeplayer --*"
+ echo -e "\t     *--(+)->sube volumen    (-)-> baja volumen     --*"
+ echo -e "\t     *------**------**-----**-------**-----**----**---*"
 
-
-                mpg123 --title -qC *.mp3
+ mpg123 --file -C /home/daniel/Desktop/Music #*.mp3
                 ;;
-        2)     clear
-                sleep 0.5
-                echo -e "\tRolones disponibles"
-
-                find . -type f -name "*.mp3" | xargs grep "*.mp3" # < sort #esto busca archivos con .mp3 y el grep los lista sin el .mp3
-                #if [-n $(find . -type f -name "*.mp3" | xargs grep "*.mp3") ]
-                #then
-                #       echo ls *.mp3
-                        sleep 05
-                #else 
-                #       echo "no hay canciones aquí"
-                #fi
-                echo
-                 ;;
-        3)      cd .. 
-
-		;;
-        4)	echo -e "\t ¿A dónde nos movemos, Emperador?"
-		echo -e "\t\t Directorios posibles:"
-		#if [ ( -n $(ls -F | grep "/$") ]
+2)     clear; sleep 0.5
+ echo -e "\tRolones disponibles"
+ find . -type f -name "*.mp3" | xargs grep "*.mp3" # < sort #esto busca archivos con .mp3 y el grep los lista sin el .mp3
+  #if [-n $(find . -type f -name "*.mp3" | xargs grep "*.mp3") ]
+     #then
+      #       echo ls *.mp3
+          sleep 05
+          #else 
+          #       echo "no hay canciones aquí"
+               #fi
+      echo
+                ;;
+3)      cd .. 
+	;;
+4) echo -e "\t ¿A dónde nos movemos, Emperador?"
+   echo -e "\t\t Directorios posibles:"
+   if [ ( -n $(ls -F | grep "/$") ]
 		#then
-			ls -F | grep "/$"
+    ls -F | grep "/$"
 			echo -ne "\033[0;34m \t\t Escribe el directorio, maifren: " #el n hace que no baje el cursor
 			read ans ; cd $ans ; sleep 0.5; echo -e "Listo, está cambiao"
 		#else 
 			echo "No hay directorios dentro de $ruta, intenta la opción de subur de carpeta"
 		#fi
 		;;
-	5)      echo "adiós"
-                fuga=1
-		;;
-	6) echo "No hace nada";;
-	
-        *)      clear
-                echo "esa no es precisamente lo que llamaría una opción"
-                ;;
+5)      echo "adiós"
+               fuga=1
+	;;
+6) echo "No hace nada" 
+	;;
 
-=======
-
-                ;;
-        4)      echo -e "\t A dónde nos movemos, Emperador?"
-                echo -e "\t\t Directorios posibles:"
-                #if [ ( -n $(ls -F | grep "/$") ]
-                #then
-                        ls -F | grep "/$"
-                        echo -ne "\t\t Answer --->" #el n hace que no baje el cursor
-                        read ans ; cd $ans ; sleep 0.5; echo -e "Listo, está cambiao"
-
-	#else 
-                        echo "No hay directorios dentro de $ruta, intenta la opción de subur de carpeta"
-                #fi
-                ;;
-        5)      echo "adiós, bai"
-                fuga=1
-                ;;
-        *)      clear
-                echo "esa no es precisamente lo que llamaría una opción"
+*)      clear
+        echo "esa no es precisamente lo que llamaría una opción"
                 ;;
         esac
 done
@@ -108,5 +83,14 @@ then    echo "No está el programa para reproducir"
         sudo apt-get install mpg123
 	prebep		#ejecuta la prebeP
 else    
+	echo -e "\n\n[##################..........................38%]"
+	sleep 0.5
+	echo -e "\n\n[###########################..................59%]"
+	sleep 0.5
+	echo -e "\n\n[###############################################..99%]"
+	sleep 0.5
+	echo -e "\n\n[########################################################################################10000% alv súper ready]"
+	sleep 0.5
+
 	prebep    #se va directo a la ejecución de la prebePlayer
 fi	

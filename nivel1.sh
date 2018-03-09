@@ -6,7 +6,7 @@ GREEN='\033[1;32m'
 YELLOW='\033[1;33m'
 STD='\033[0;0;39m'
 CYAN='\033[1;96m'
-
+tput civis
 
 
 
@@ -23,15 +23,15 @@ echo "
 
 
 echo " 	         				      _____ _____  _____ _  __ "
-sleep 1s
+sleep 0.3s
 echo " 		        			     / ____|_   _|/ ____| |/ /    /\ "
-sleep 1s
+sleep 0.3s
 echo " 			         		    | |  __  | | | (___ | ' /    /  \ "
-sleep 1s
+sleep 0.3s
 echo " 				        	    | | |_ | | |  \___ \|  <    / /\ \ "
-sleep 1s
+sleep 0.3s
 echo " 					            | |__| |_| |_ ____) | . \  / ____ \ "
-sleep 1s
+sleep 0.3s
 echo " 					            \_____|_____|_____/|_|\_\/_/    \_\ "
 
 
@@ -43,7 +43,7 @@ echo "			 	    	     __^__                                        __^__  "
 echo "				  	    ( ___ )--------------------------------------( ___ ) "
 echo " 	  				     |___|                                        |___|  "
 echo " 	                                     |___|             INSTRUCCIONES              |___|  "
-echo " 	                                     |___|     veras una imagenes fragmentada     |___|  "
+echo " 	                                     |___|    Verás una imagenes fragmentada      |___|  "
 echo " 	                                     |___|	   durante 1s y después dirás     |___|  "
 echo " 	                                     |___|            que personaje es.           |___|  "
 echo -e " 	       	                             |___|                                        |___|  "
